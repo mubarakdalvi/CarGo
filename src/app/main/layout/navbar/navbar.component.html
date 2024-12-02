@@ -24,14 +24,15 @@
       src="assets/logos/Cargo wit name.png"
       class="size-9 md:size-11"
     />
-  </span>
-  <span class="hover:bg-white py-2 px-2 hover:rounded-full" (click)="close()">
-    <span class="flex items-center">
-      <mat-icon class="transform scale-125">{{
-        isSidebarToggle ? "arrow_forward" : "menu"
-      }}</mat-icon>
+    <span class="hover:bg-white py-2 px-2 hover:rounded-full" (click)="close()">
+      <span class="flex items-center">
+        <mat-icon class="transform scale-125">{{
+          isSidebarToggle ? "arrow_forward" : "menu"
+        }}</mat-icon>
+      </span>
     </span>
   </span>
+
   <span class="flex flex-1 justify-center gap-5"
     ><app-search></app-search
   ></span>
