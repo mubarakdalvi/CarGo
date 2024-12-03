@@ -7,6 +7,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { LogoutComponent } from './logout/logout.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ContactusComponent } from './contact-us/contact-us.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { ContactusComponent } from './contact-us/contact-us.component';
     ContactusComponent
 
   ],
-  imports: [CommonModule, ProfileRoutingModule, SharedModule],
+  imports: [CommonModule, ProfileRoutingModule, SharedModule, MatIconModule],
   exports: [AccountsComponent],
 })
 export class AccountsModule {}

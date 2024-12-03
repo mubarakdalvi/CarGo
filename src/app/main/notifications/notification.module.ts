@@ -7,6 +7,7 @@ import { NotificationsComponent } from './notifications.component';
 import { NotificationModalComponent } from './notification-modal/notification-modal.component';
 import { MessageComponent } from '../notifications/message/message.component';
 import { MessageModalComponent } from '../notifications/message/message-modal/message-modal.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { MessageModalComponent } from '../notifications/message/message-modal/me
     MessageComponent,
     MessageModalComponent,
   ],
-  imports: [CommonModule, NotificationRoutingModule],
+  imports: [CommonModule, NotificationRoutingModule, MatIconModule],
   exports: [NotificationsComponent],
 })
 export class NotificationModule {}
